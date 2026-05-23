@@ -1,0 +1,18 @@
+%&latex
+\documentclass[11pt]{article}
+\usepackage{fancyvrb}
+\begin{document}
+
+\section*{What is this?}
+
+This is a \LaTeX~setup to programmatically create a CV (\verb+cv.tex+) and cover letter (\verb+letter.tex+) tailored to a specific position; originally made for personal use, until I decided to share it with the world. I have removed my personal data and keep making it more generic so it can be useful to more people.
+
+All information pertaining to the position, such as the job posting URL and the job title, is included in \verb+position_details.tex+. In that file, you can currently choose between two languages, Greek and English (though I plan to make it more general). Be warned, though, that the way you are expected to write Greek is more than a little strange (eg opening and closing quotation marks are given by \verb+((+ and \verb+))+ respectively). If writing in Greek, you \textbf{must} use \verb+\en{text}+ whenever \verb+text+ is written in the latin alphabet.
+
+Define the general layout of the CV and cover letter in \verb+cv.tex+ and \verb+letter.tex+ respectively. Furthermore, for the CV, define how specific items appear in \verb+cv_template.tex+, and you can use those definitions in \verb+cv_content_language.tex+.
+
+Files \verb+cv_content_english.tex+ / \verb+cv_content_greek.tex+ and\\\verb+letter_content_english.tex+ / \verb+letter_content_greek.tex+ are where you write the actual content. Use \verb+\hide{text}+ to hide \verb+text+. Use\\\verb+\inif{\condition1\condition2}{text}+ to show \verb+text+ whenever at least one of a set of conditions is nonzero and hide it otherwise; define these conditions as any number in \verb+position_details.tex+.
+
+For the CV, included packages along with some definitions are found in \verb+cv_packages_etc.tex+. Note that you can also use a bibliography-style section to include any journal papers you may have authored, as long as you include their bibtex references in \verb+cv.bib+.
+
+\end{document}
