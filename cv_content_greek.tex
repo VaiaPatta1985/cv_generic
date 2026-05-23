@@ -1,0 +1,118 @@
+% replace placeholder blahblah
+\cfoot{\thepage\ από \pageref{LastPage}}
+
+\newcommand{\nationality}{\centerline{\textbf{Υπηκοότητα: blahblah}}}
+
+\newcommand{\name}{\begin{Huge}blahblah\end{Huge}}
+\newcommand{\address}{blahblah}
+\newcommand{\email}{\href{mailto:blahblah}{\en{blahblah}}}
+\newcommand{\mobile}{blahblah}
+\newcommand{\linkedin}{\href{blahblah}{\en{blahblah}}}
+\newcommand{\deptwebpage}{\href{blahblah}{\en{blahblah}}}
+\newcommand{\orcid}{\href{blahblah}{\en{blahblah}}}
+\newcommand{\resid}{\href{blahblah}{\en{blahblah}}}
+
+\newcommand{\github}{\href{blahblah}{\en{blahblah}}}
+
+\newcommand{\personalcontactinfo}{\begin{footnotesize}\centerline{Διεύθυνση: \address}\hide{\centerline{Κινητά τηλέφωνα: \mobile}\\}\end{footnotesize}\begin{footnotesize}\centerline{\en{Email: \email}}\end{footnotesize}}
+
+\newcommand{\academicinfo}{\begin{footnotesize}\hide{\en{LinkedIn}: \linkedin\\}\hide{Ιστοσελίδα: \deptwebpage\\}\en{ORCID}: \orcid\hide{\\\en{ResearcherID}: \resid}\end{footnotesize}}
+
+\newcommand{\empl}{\subsection*{Σχετική προϋπηρεσία}
+	\thisisajob{blahblah}{blahblah}{blahblah}{blahblah}
+}
+
+\newcommand{\teaching}{\subsection*{Διδακτική εμπειρία}
+	\thisisajob{blahblah}{blahblah}{blahblah}{blahblah}
+}
+
+\newcommand{\papers}{
+	\renewcommand{\bibname}{\selectlanguage{greek}Δημοσιεύσεις\selectlanguage{english}}
+	\bibliography{cv}
+	\selectlanguage{greek}
+}% CONSTRAINT: has to go last!
+
+\newcommand{\education}{\subsection*{Ακαδημαϊκά προσόντα}
+	\school{blahblah}{blahblah}{blahblah}{blahblah}
+}
+
+\newcommand{\languages}{\subsection*{Ξένες Γλώσσες}
+	\ispeakthis{blahblah}{blahblah}{επίπεδο blahblah}\\\noindent
+}
+
+\newcommand{\awards}{\subsection*{Υποτροφίες και χρηματοδότηση}
+	\award{blahblah}{blahblah}{blahblah}
+}
+
+\newcommand{\itskills}{\subsection*{Τεχνικές γνώσεις και δεξιότητες}
+	\begin{itemize}
+		\item blahblah
+	\end{itemize}
+}
+
+\newcommand{\engage}{\subsection*{Επικοινωνία επιστήμης}
+	\begin{itemize}
+		\item Σε ειδικούς:
+		\begin{itemize}
+			\item blahblah
+		\end{itemize}
+		\item Στο ευρύ κοινό:
+		\begin{itemize}
+			\item blahblah
+		\end{itemize}
+	\end{itemize}
+}
+
+\newcommand{\teachq}{\subsection*{Διδακτική πιστοποίηση}
+	\qual{blahblah}{blahblah}{blahblah}
+}
+
+\newcommand{\research}{\subsection*{Ερευνητική εμπειρία}
+	\researchjob{blahblah}{blahblah}{blahblah}{blahblah}
+}
+
+\newcommand{\societies}{\subsection*{Επαγγελματικοί Σύλλογοι}
+	\begin{itemize}
+		\item blahblah
+	\end{itemize}
+	\hide{\subsection*{Άλλοι Σύλλογοι}
+		\begin{itemize}
+			\item blahblah
+	\end{itemize}}
+}
+
+\newcommand{\addexp}{\subsection*{Διοικητικές και Συλλογικές Ευθύνες}
+	\begin{itemize}
+		\item blahblah
+	\end{itemize}
+}
+
+\newcommand{\pastoral}{\subsection*{Καθοδηγητικοί Ρόλοι}
+	\begin{itemize}
+		\item blahblah
+	\end{itemize}
+}
+
+\newcommand{\other}{\subsection*{Δραστηριότητες Κατάρτισης και Ανάπτυξης}
+	\course{blahblah}{blahblah}
+}
+
+\newcommand{\talks}{\subsection*{Προσκεκλημένη Ομιλήτρια}
+	\talk{blahblah}{blahblah}{blahblah}
+}
+
+\newcommand{\conf}{\subsection*{Ομιλίες και παρουσιάσεις}
+	\talk{blahblah}{blahblah}{blahblah}\\
+}
+
+\newcommand{\otherconf}{\subsection*{Συνέδρια}
+	\course{blahblah}{blahblah}\\
+}
+
+\newcommand{\interests}{\subsection*{Επαγγελματικά Ενδιαφέροντα}
+	blahblah
+}
+
+\newcommand{\hobbies}{\subsection*{Χόμπι}
+	blahblah
+}

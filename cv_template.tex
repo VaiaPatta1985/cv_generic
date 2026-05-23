@@ -1,0 +1,60 @@
+%\renewcommand{\familydefault}{\sfdefault}
+
+\addtolength{\oddsidemargin}{-1.2in}
+\addtolength{\evensidemargin}{-1.2in}
+\addtolength{\textwidth}{2in}
+%\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1in}
+%\linespread{1.0}
+
+\newcommand{\thisisajob}[4]{\begin{tabular}{ p{17cm} p{5cm} } % {title}{details}{employer}{from when to when}
+		\textbf{#1}&#4\\
+		#2&\\\end{tabular}
+	\begin{tabular}{ >{\raggedleft}p{17cm} >{\raggedright}p{5cm}}
+		\emph{#3}&
+		%\hline
+\end{tabular}}
+
+\newcommand{\researchjob}[4]{\begin{tabular}{ p{17cm} p{5cm} } % {title}{details}{employer}{from when to when}
+		\textbf{#1}&#4\\
+		\emph{#2}&\\
+		#3&
+		%\hline
+\end{tabular}}
+
+\newcommand{\school}[4]{\begin{tabular}{ p{17cm} p{5cm} } % {degree}{where}{when}{details}
+		\textbf{#1}&#3\\
+		#4&\\\end{tabular}
+	\begin{tabular}{ >{\raggedleft}p{17cm} >{\raggedright}p{5cm}}
+		\emph{\textbf{#2}}&
+		%\hline
+\end{tabular}}
+
+\newcommand{\ispeakthis}[3]{\begin{tabular}{p{2cm} p{3cm} p{10cm}} % {language}{degree}{level}
+		\textbf{#1}&\emph{#3}&~#2
+\end{tabular}}
+
+% pick an \award command that suits you
+
+\newcommand{\award}[3]{\begin{tabular}{p{10cm} p{6.5cm} p{5cm}} % {what}{details}{when}
+		#1&\textbf{#2}&#3
+\end{tabular}}
+
+\renewcommand{\award}[3]{\begin{tabular}{p{17cm} p{5cm}} % {what}{details}{when}
+		#1&#3\\
+		\textbf{(#2)}&
+\end{tabular}}
+
+\newcommand{\qual}[3]{\begin{tabular}{p{17cm} p{5cm}} % {what}{details}{when}
+		\textbf{#1}&#3\\
+		#2&
+\end{tabular}}
+
+\newcommand{\course}[2]{\begin{tabular}{p{17cm} p{5cm}} % {what}{when}
+		#1&#2
+\end{tabular}}
+
+\newcommand{\talk}[3]{\begin{tabular}{p{17cm} p{5cm}} % {what}{where}{when}
+		#1&#3\\
+		\emph{#2}&
+\end{tabular}}

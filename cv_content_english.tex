@@ -1,0 +1,112 @@
+% replace placeholder blahblah
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+\newcommand{\nationality}{\centerline{\textbf{Nationality: blahblah}}}
+
+\newcommand{\name}{\begin{Huge}blahblah\end{Huge}}
+\newcommand{\address}{blahblah}
+\newcommand{\email}{\href{mailto:blahblah}{blahblah}}
+\newcommand{\mobile}{blahblah}
+\newcommand{\linkedin}{\href{blahblah}{blahblah}}
+\newcommand{\deptwebpage}{\href{blahblah}{blahblah}}
+\newcommand{\orcid}{\href{blahblah}{blahblah}}
+\newcommand{\resid}{\href{blahblah}{blahblah}}
+
+%\newcommand{\personalcontactinfo}{\begin{footnotesize}\centerline{Postal address: \address}\hide{\centerline{Mobile phone(s): \mobile}}\end{footnotesize}\begin{footnotesize}\centerline{Email: \email}\end{footnotesize}}
+
+\newcommand{\personalcontactinfo}{\begin{footnotesize}\centerline{Email: \email}\end{footnotesize}}
+
+\newcommand{\academicinfo}{\begin{footnotesize}\hide{LinkedIn: \linkedin\\}\hide{Departmental webpage: \deptwebpage\\}ORCID: \orcid\hide{\\ResearcherID: \resid}\end{footnotesize}}
+
+\newcommand{\github}{\href{blahblah}{blahblah}}
+
+\newcommand{\empl}{\subsection*{Employment (industry)}
+\thisisajob{blahblah}{blahblah}{blahblah}{blahblah}
+}
+
+\newcommand{\teaching}{\subsection*{Employment (teaching)}
+	\thisisajob{blahblah}{blahblah}{blahblah}{blahblah}
+}
+
+\newcommand{\papers}{
+	\renewcommand{\bibname}{Published Papers}
+	\bibliography{cv}
+}
+
+\newcommand{\education}{\subsection*{Academic Qualifications}
+	\school{blahblah}{blahblah}{blahblah}{blahblah}\\
+}
+
+\newcommand{\languages}{\subsection*{Languages}
+	\ispeakthis{blahblah}{blahblah}{blahblah}\\
+}
+
+\newcommand{\awards}{\subsection*{Awards and Funding}
+	\award{blahblah}{blahblah}{blahblah}
+}
+
+\newcommand{\itskills}{\subsection*{IT skills}
+	\begin{itemize}
+		\item blahblah
+	\end{itemize}
+}
+
+\newcommand{\engage}{\subsection*{Public Engagement}
+	\begin{itemize}
+		\item blahblah
+	\end{itemize}
+}
+
+\newcommand{\teachq}{\subsection*{Teaching qualifications}
+	\qual{blahblah}{blahblah}{blahblah}
+}
+
+\newcommand{\research}{\subsection*{Research Experience}
+	\researchjob{blahblah}{blahblah}{blahblah}{blahblah}
+}
+
+\newcommand{\societies}{\subsection*{Professional Organisations}
+	\begin{itemize}
+		\item blahblah
+	\end{itemize}
+	\hide{\subsection*{Other Societies}
+		\begin{itemize}
+			\item blahblah
+	\end{itemize}}
+}
+
+\newcommand{\addexp}{\subsection*{Administrative and Collective Responsibilities}
+	\begin{itemize}
+		\item blahblah
+	\end{itemize}
+}
+
+\newcommand{\pastoral}{\subsection*{Pastoral Roles}
+	\begin{itemize}
+		\item blahblah
+	\end{itemize}
+}
+
+\newcommand{\other}{\subsection*{Training and Development Attended}
+	\course{blahblah}{blahblah}
+}
+
+\newcommand{\talks}{\subsection*{Invited talks}
+	\talk{blahblah}{blahblah}{blahblah}
+}
+
+\newcommand{\conf}{\subsection*{Talks and presentations}
+	\talk{blahblah}{blahblah}{blahblah}\\
+}
+
+\newcommand{\otherconf}{\subsection*{Conferences}
+	\course{blahblah}{blahblah}\\
+}
+
+\newcommand{\interests}{\subsection*{Professional interests}
+	blahblah
+}
+
+\newcommand{\hobbies}{\subsection*{Hobbies}
+	blahblah
+}
