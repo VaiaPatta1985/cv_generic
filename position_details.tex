@@ -1,8 +1,11 @@
+\def\positiongreek{1} % 1 for greek, anything else for english
+
+\newcommand{\en}[1]{\if\positiongreek1\selectlanguage{english}\fi#1\if\positiongreek1\selectlanguage{greek}\fi}
+\newcommand{\inif}[2]{\ifnum#1>0 #2\fi}
+
 % replace placeholder blahblah
 \newcommand{\tourl}{blahblah}
 \newcommand{\positiontitle}{blahblah}
-
-\def\positiongreek{0} % 1 for greek, anything else for english
 
 % from here on: 0 to exclude, anything else to include
 
